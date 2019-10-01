@@ -16,7 +16,7 @@ public class DodgemTest {
     public void setUp() throws Exception {
         dodgems = new Dodgems("Bumper Cars", 5);
         oldVisitor = new Visitor(80, 201, 100.00);
-        youngVisitor = new Visitor(10, 120, 100.00);
+        youngVisitor = new Visitor(10, 150, 100.00);
     }
 
 
