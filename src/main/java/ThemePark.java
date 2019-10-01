@@ -20,4 +20,12 @@ public class ThemePark {
     public int stallCount() {
         return this.stalls.size();
     }
+
+    public void addAttraction(Attraction attraction){
+        this.attractions.add(attraction);
+    }
+
+    public void addStall(Stall stall){
+        this.stalls.add(stall);
+    }
 }
