@@ -43,7 +43,7 @@ public class TobaccoStallTest {
     public void isAllowedTo_IfAge16(){
         assertFalse(tobaccoStall.isAllowedTo(visitor2));
     }
-    
+
     @Test
     public void hasRating() {
         assertEquals(8, tobaccoStall.getRating());
