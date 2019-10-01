@@ -45,4 +45,6 @@ public class DodgemTest {
         assertEquals(2.25, dodgems.priceFor(youngVisitor), 0.01);
         assertEquals(4.50, dodgems.priceFor(oldVisitor), 0.01);
     }
+
+
 }
