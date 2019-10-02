@@ -1,11 +1,10 @@
 package attractions;
 
-import behaviours.IReviewed;
 import behaviours.ISecurity;
 import behaviours.ITicketed;
 import people.Visitor;
 
-public class RollerCoaster  extends Attraction implements ITicketed, ISecurity, IReviewed {
+public class RollerCoaster  extends Attraction implements ITicketed, ISecurity {
 
     private double price;
     private int minAge;
@@ -35,6 +34,6 @@ public class RollerCoaster  extends Attraction implements ITicketed, ISecurity, 
 
     @Override
     public boolean isAllowedTo(Visitor visitor) {
-        return (visitor.getAge() >= this.minAge && visitor.getHeight() > this.minHeight);
+        return visitor.getAge() >= this.minAge && visitor.getHeight() > this.minHeight;
     }
 }
